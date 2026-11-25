@@ -1,0 +1,25 @@
+{
+  "name": "ai-pr-summary",
+  "version": "1.0.0",
+  "description": "GitHub Action to auto-generate PR descriptions using AI",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts --source-map --license licenses.txt",
+    "lint": "eslint src/",
+    "test": "jest"
+  },
+  "keywords": ["github-action", "ai", "pr-summary", "code-review", "claude", "openai"],
+  "author": "Mansi2221",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "openai": "^4.73.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@vercel/ncc": "^0.38.3",
+    "typescript": "^5.3.3"
+  }
+}
